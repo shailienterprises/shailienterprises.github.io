@@ -1,0 +1,100 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* navigation bar */
+#navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+#logo{
+    /* border: 2px solid green; */
+    width: 167px;
+    height: 152px;
+    padding: 16px;
+    margin: 8px;
+    margin-left: 40px;
+}
+#navbar ul{
+    /* border: 2px solid violet; */
+    display: flex;
+    margin-right: 40px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 8px 40px;
+    text-decoration: none;
+    border-radius: 23px;
+}
+#navbar ul li a:hover{
+    background-color: rgb(36, 34, 34);
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+/* banner */
+#banner{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner::before{
+    content: "";
+    position: absolute;
+    background: url('/img/heading-2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 700px;
+    top: 175px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.65;
+}
+#banner .caption{
+    /* border: 2px solid red; */
+    margin-left: 25px;
+    font-size: 2.5rem;
+    color: white;
+}
+#banner .btn{
+    width: fit-content;
+    margin: 8px auto;
+}
+#banner .btn a{
+    border: 2px solid transparent;
+    border-radius: 23px;
+    padding: 25px 40px;
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: black;
+}
+#banner .btn:hover{
+    transform: scale(1.1, 1.1);
+}
+#banner .btn a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+/* utility classes */
+.btn{
+    cursor: pointer;
+    border: 2px solid transparent;
+    display: block;
+    background-color: transparent;
+}
