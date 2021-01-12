@@ -1,0 +1,42 @@
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+#logo{
+    margin-left: 15px;
+    padding: 0px;
+    width: 136px;
+    height: 122px;
+}
+#navbar ul{
+    flex-direction: column;
+    margin-right: 15px;
+}
+#navbar ul li{
+    font-size: 0.7rem;
+}
+#navbar ul li a{
+    text-align: center;
+    pointer-events: none;
+}
+
+/* banner */
+#banner{
+    align-items: center;
+}
+#banner::before{
+    opacity: 0.5;
+}
+#banner .btn{
+    margin-top: 30px;
+    border: 2px solid #153de8;
+    border-radius: 13px;
+    pointer-events: none;
+}
+#banner .btn a{
+    font-size: 2rem;
+    pointer-events: none;
+}
