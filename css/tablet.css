@@ -37,3 +37,21 @@
     font-size: 2rem;
     pointer-events: none;
 }
+
+/* services */
+#services .caption{
+    font-size: 1.5rem;
+}
+#container{
+    width: 80%;
+}
+#services .card{
+    background-color: white;
+    width: 30%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    pointer-events: none;
+}
